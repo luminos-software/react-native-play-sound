@@ -1,0 +1,5 @@
+rootProject.name = 'TestApp'
+include ':react-native-play-sound'
+project(':react-native-play-sound').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-play-sound/android')
+
+include ':app'
