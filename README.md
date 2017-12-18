@@ -26,6 +26,7 @@ After install package saved:
 
 ## Basic usage
 ANDROID: Save your sound clip files under the directory android/app/src/main/res/raw. Note that files in this directory must be lowercase and underscored (e.g. my_file_name.mp3) and that subdirectories are not supported by Android.
+
 IOS: Open Xcode and add your sound files to the project.
 
 In React-native project:
