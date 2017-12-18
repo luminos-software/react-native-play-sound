@@ -19,7 +19,7 @@ After install package saved:
 ```
     yarn
 ```
-Then link it automatically using:
+## Then link it automatically using:
 ```
     react-native link react-native-play-sound
 ```
