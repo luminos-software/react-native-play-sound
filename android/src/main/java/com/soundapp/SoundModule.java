@@ -35,4 +35,16 @@ public class SoundModule extends ReactContextBaseJavaModule {
             e.printStackTrace();
         }
     }
+
+    @ReactMethod
+    public void stopSound() {
+        try {
+            if(mediaPlayer != null) {
+                mediaPlayer.release();
+                mediaPlayer = null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

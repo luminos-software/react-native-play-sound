@@ -26,5 +26,12 @@ RCT_EXPORT_METHOD(playSound:(NSString *)soundPath)
   });
 }
 
+RCT_EXPORT_METHOD(stopSound)
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[SoundManager sharedManager] stopMusic];
+    });
+}
+
 @end
 

@@ -37,7 +37,7 @@
 		88D9F2DDDB0F435DA66D50EC /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E76A891354804D5DB050B939 /* libRCTActionSheet.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		E907DAD91FE3B6EC00F6F39D /* jingle_bells_keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E907DAD81FE3B6EC00F6F39D /* jingle_bells_keyboard.mp3 */; };
-		E0938466686C40B4B97CB30A /* libPlaySound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9A6EFAC326404BAA142304 /* libPlaySound.a */; };
+		8027DCDFD8814862A0A97103 /* libPlaySound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF572D4C5434411A6EC9B70 /* libPlaySound.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -359,8 +359,8 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E76A891354804D5DB050B939 /* libRCTActionSheet.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTActionSheet.a; sourceTree = "<group>"; };
 		E907DAD81FE3B6EC00F6F39D /* jingle_bells_keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jingle_bells_keyboard.mp3; sourceTree = "<group>"; };
-		3E9943C8C1CE4B35A3989A87 /* PlaySound.xcodeproj */ = {isa = PBXFileReference; name = "PlaySound.xcodeproj"; path = "../node_modules/react-native-play-sound/PlaySound/PlaySound.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		3B9A6EFAC326404BAA142304 /* libPlaySound.a */ = {isa = PBXFileReference; name = "libPlaySound.a"; path = "libPlaySound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A0C248813A174CA59EA85EBD /* PlaySound.xcodeproj */ = {isa = PBXFileReference; name = "PlaySound.xcodeproj"; path = "../node_modules/react-native-play-sound/PlaySound/PlaySound.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		ECF572D4C5434411A6EC9B70 /* libPlaySound.a */ = {isa = PBXFileReference; name = "libPlaySound.a"; path = "libPlaySound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,7 +389,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				88D9F2DDDB0F435DA66D50EC /* libRCTActionSheet.a in Frameworks */,
-				E0938466686C40B4B97CB30A /* libPlaySound.a in Frameworks */,
+				8027DCDFD8814862A0A97103 /* libPlaySound.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +567,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				82BBB967297F4266ACBD7D50 /* SoundApp.xcodeproj */,
-				3E9943C8C1CE4B35A3989A87 /* PlaySound.xcodeproj */,
+				A0C248813A174CA59EA85EBD /* PlaySound.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -619,6 +619,7 @@
 			isa = PBXGroup;
 			children = (
 				E76A891354804D5DB050B939 /* libRCTActionSheet.a */,
+				16A34F6B7A7C4E21A74855B6 /* libPlaySound.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1224,7 +1225,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1250,7 +1251,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1277,7 +1278,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1299,7 +1300,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1328,7 +1329,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = "TestApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1363,7 +1364,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-play-sound/ios/SoundApp/**",
-					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound",
+					"$(SRCROOT)/../node_modules/react-native-play-sound/PlaySound/PlaySound/**",
 				);
 				INFOPLIST_FILE = "TestApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

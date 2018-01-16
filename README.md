@@ -7,11 +7,7 @@ First install the npm package from your app directory:
     npm install react-native-play-sound --save
 ```
 ## Installation via yarn
-First install the yarn package from your app directory:
-```
-    yarn
-```
-After save package name in package.json:
+First save package name in package.json:
 ```
     yarn add react-native-play-sound
 ```
@@ -32,7 +28,7 @@ IOS: Open Xcode and add your sound files to the project.
 In React-native project:
 
 ```
-import PlaySound from 'react-native-play-sound';
+import { PlaySound, StopSound } from 'react-native-play-sound';
 
 // And on press or anywhere you need it :
 // PlaySound('sound_name')
@@ -46,5 +42,12 @@ import PlaySound from 'react-native-play-sound';
         >
           <Text>Play Jingle Bell</Text>
         </TouchableOpacity>
-
+        
+        <TouchableOpacity
+            onPress={() => StopSound()}
+            style={styles.touchable}
+        >
+            <Text>Stop Jingle Bell</Text>
+        </TouchableOpacity>
+        </View>
 ```
