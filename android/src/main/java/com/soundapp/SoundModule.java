@@ -47,4 +47,21 @@ public class SoundModule extends ReactContextBaseJavaModule {
             e.printStackTrace();
         }
     }
+
+    @ReactMethod
+    public void playSoundRepeat(String soundPath) {
+        try {
+            int resource = context.getResources().getIdentifier(soundPath, "raw", context.getPackageName());
+            if(mediaPlayer != null) {
+                mediaPlayer.release();
+                mediaPlayer = null;
+            }
+            mediaPlayer = MediaPlayer.create(this.getReactApplicationContext(), resource);
+            mediaPlayer.setLooping(true);
+            mediaPlayer.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

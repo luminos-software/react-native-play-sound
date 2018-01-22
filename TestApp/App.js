@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { PlaySound, StopSound } from 'react-native-play-sound';
+import { PlaySound, StopSound, PlaySoundRepeat } from 'react-native-play-sound';
 import {
   TouchableOpacity,
   StyleSheet,
@@ -26,12 +26,20 @@ export default class App extends Component<{}> {
             <Text>Play Jingle Bell</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.stopContainer}>
+        <View style={styles.container}>
           <TouchableOpacity
             onPress={() => StopSound()}
             style={styles.touchable}
           >
             <Text>Stop Jingle Bell</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.container}>
+          <TouchableOpacity
+            onPress={() => PlaySoundRepeat('jingle_bells_keyboard')}
+            style={styles.touchable}
+          >
+            <Text>Play Repeated Jingle Bell</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -41,11 +49,6 @@ export default class App extends Component<{}> {
 
 const styles = StyleSheet.create({
   container: {
-    height: 100,
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  stopContainer: {
     height: 100,
     alignItems: 'center',
     backgroundColor: '#F5FCFF',

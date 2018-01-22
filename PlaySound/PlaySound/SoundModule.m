@@ -33,5 +33,13 @@ RCT_EXPORT_METHOD(stopSound)
     });
 }
 
+RCT_EXPORT_METHOD(playSoundRepeat:(NSString *)soundPath)
+{
+  dispatch_async(dispatch_get_main_queue(), ^{
+    NSString *soundUrl = [[NSBundle mainBundle] pathForResource:soundPath ofType:@"mp3"];
+    [[SoundManager sharedManager] playMusic:soundUrl looping:YES];
+  });
+}
+
 @end
 

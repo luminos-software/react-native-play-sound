@@ -1,6 +1,6 @@
 {
   "name": "react-native-play-sound",
-  "version": "1.0.15",
+  "version": "1.0.20",
   "description": "Play music and sounds with react-native",
   "main": "PlaySound.js",
   "scripts": {
@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/luminos-software/react-native-play-sound#readme",
   "dependencies": {
-    "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react": "16.0.0"
   },
   "devDependencies": {
     "babel-jest": "21.2.0",

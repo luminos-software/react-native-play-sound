@@ -20,6 +20,14 @@ After install package saved:
     react-native link react-native-play-sound
 ```
 
+## Methods
+```
+PlaySound('sound_name')
+PlaySoundRepeat('sound_name')
+StopSound()
+
+```
+
 ## Basic usage
 ANDROID: Save your sound clip files under the directory android/app/src/main/res/raw. Note that files in this directory must be lowercase and underscored (e.g. my_file_name.mp3) and that subdirectories are not supported by Android.
 
@@ -44,10 +52,16 @@ import { PlaySound, StopSound } from 'react-native-play-sound';
         </TouchableOpacity>
         
         <TouchableOpacity
+          onPress={() => PlaySoundRepeat('jingle_bells_keyboard')}
+          style={styles.touchable}
+        >
+          <Text>Play Repeated Jingle Bell</Text>
+        </TouchableOpacity>
+        
+        <TouchableOpacity
             onPress={() => StopSound()}
             style={styles.touchable}
         >
             <Text>Stop Jingle Bell</Text>
         </TouchableOpacity>
-        </View>
 ```

@@ -4,18 +4,22 @@ import {
 } from 'react-native';
 
 const { SoundModule } = NativeModules;
+const nativeModules = require('react-native').NativeModules;
 
 module.exports = {
   PlaySound :PlaySound = sound => {
-    const nativeModules = require('react-native').NativeModules;
     Platform.OS === 'ios'
       ? nativeModules.SoundModule.playSound(sound)
       : NativeModules.SoundManager.playSound(sound)
   },
   StopSound :StopSound = () => {
-    const nativeModules = require('react-native').NativeModules;
     Platform.OS === 'ios'
       ? nativeModules.SoundModule.stopSound()
       : NativeModules.SoundManager.stopSound()
-  }
+  },
+  PlaySoundRepeat :PlaySoundRepeat = sound => {
+  Platform.OS === 'ios'
+    ? nativeModules.SoundModule.playSoundRepeat(sound)
+    : NativeModules.SoundManager.playSoundRepeat(sound)
+},
 };
