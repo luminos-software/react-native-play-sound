@@ -36,7 +36,7 @@ IOS: Open Xcode and add your sound files to the project.
 In React-native project:
 
 ```
-import { PlaySound, StopSound } from 'react-native-play-sound';
+import { PlaySound, StopSound, PlaySoundRepeat } from 'react-native-play-sound';
 
 // And on press or anywhere you need it :
 // PlaySound('sound_name')

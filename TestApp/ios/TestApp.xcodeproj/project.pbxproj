@@ -37,7 +37,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		E933A1EC201606F000959354 /* jingle_bells_keyboard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E933A1B6201606F000959354 /* jingle_bells_keyboard.mp3 */; };
-		CB38A97EDA2F4E9D97647338 /* libPlaySound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAA1E2342964635BB45A9B3 /* libPlaySound.a */; };
+		02EE693FC86E4CA3B606DDE4 /* libPlaySound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E044D92A63344DCFAD1D25DE /* libPlaySound.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,8 +344,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E933A1B6201606F000959354 /* jingle_bells_keyboard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jingle_bells_keyboard.mp3; sourceTree = "<group>"; };
-		C68D776DFE744095B026FCC5 /* PlaySound.xcodeproj */ = {isa = PBXFileReference; name = "PlaySound.xcodeproj"; path = "../node_modules/react-native-play-sound/PlaySound/PlaySound.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		1BAA1E2342964635BB45A9B3 /* libPlaySound.a */ = {isa = PBXFileReference; name = "libPlaySound.a"; path = "libPlaySound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		71FFE0061FF0416FACE1F0F8 /* PlaySound.xcodeproj */ = {isa = PBXFileReference; name = "PlaySound.xcodeproj"; path = "../node_modules/react-native-play-sound/PlaySound/PlaySound.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		E044D92A63344DCFAD1D25DE /* libPlaySound.a */ = {isa = PBXFileReference; name = "libPlaySound.a"; path = "libPlaySound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,7 +374,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				CB38A97EDA2F4E9D97647338 /* libPlaySound.a in Frameworks */,
+				02EE693FC86E4CA3B606DDE4 /* libPlaySound.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,7 +560,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				C68D776DFE744095B026FCC5 /* PlaySound.xcodeproj */,
+				71FFE0061FF0416FACE1F0F8 /* PlaySound.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
