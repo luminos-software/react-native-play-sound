@@ -1,6 +1,6 @@
 {
   "name": "react-native-play-sound",
-  "version": "1.0.22",
+  "version": "1.0.24",
   "description": "Play music and sounds with react-native",
   "main": "PlaySound.js",
   "scripts": {

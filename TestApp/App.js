@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { PlaySound, StopSound, PlaySoundRepeat } from 'react-native-play-sound';
+import { PlaySound, StopSound, PlaySoundRepeat, PlaySoundMusicVolume } from 'react-native-play-sound';
 import {
   TouchableOpacity,
   StyleSheet,
@@ -40,6 +40,14 @@ export default class App extends Component<{}> {
             style={styles.touchable}
           >
             <Text>Play Repeated Jingle Bell</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.container}>
+          <TouchableOpacity
+            onPress={() => PlaySoundMusicVolume(0.4)}
+            style={styles.touchable}
+          >
+            <Text>Set sound volume at 40%</Text>
           </TouchableOpacity>
         </View>
       </View>

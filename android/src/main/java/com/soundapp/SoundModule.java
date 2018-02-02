@@ -64,4 +64,11 @@ public class SoundModule extends ReactContextBaseJavaModule {
         }
     }
 
+    @ReactMethod
+    public void playSoundMusicVolume(final Float left, final Float right){
+        if(mediaPlayer != null) {
+            mediaPlayer.setVolume(left, right);
+        }
+    }
+
 }

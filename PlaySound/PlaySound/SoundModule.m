@@ -41,5 +41,12 @@ RCT_EXPORT_METHOD(playSoundRepeat:(NSString *)soundPath)
   });
 }
 
+RCT_EXPORT_METHOD(playSoundMusicVolume:(float)value)
+{
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[SoundManager sharedManager] setMusicVolume:value];
+  });
+}
+
 @end
 

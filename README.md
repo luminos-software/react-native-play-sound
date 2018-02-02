@@ -25,6 +25,7 @@ After install package saved:
 PlaySound('sound_name')
 PlaySoundRepeat('sound_name')
 StopSound()
+PlaySoundMusicVolume('volume')
 
 ```
 
@@ -36,7 +37,7 @@ IOS: Open Xcode and add your sound files to the project.
 In React-native project:
 
 ```
-import { PlaySound, StopSound, PlaySoundRepeat } from 'react-native-play-sound';
+import { PlaySound, StopSound, PlaySoundRepeat, PlaySoundMusicVolume } from 'react-native-play-sound';
 
 // And on press or anywhere you need it :
 // PlaySound('sound_name')
@@ -64,4 +65,12 @@ import { PlaySound, StopSound, PlaySoundRepeat } from 'react-native-play-sound';
         >
             <Text>Stop Jingle Bell</Text>
         </TouchableOpacity>
+        
+        <TouchableOpacity
+            onPress={() => PlaySoundMusicVolume(0.4)}
+            style={styles.touchable}
+        >
+            <Text>Set sound volume at 0.4</Text>
+        </TouchableOpacity>
+        
 ```
